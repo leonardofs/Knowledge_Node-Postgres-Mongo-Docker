@@ -1,5 +1,5 @@
 
-##  CRUD com Node, Express e Postgres sobre containers usando Docker e Docker Compose.
+##  Web App para gestão de base de conhecimento/ tutoriais, produzido com Node, Express e Postgres sobre containers usando Docker e Docker Compose.
 
 ## Prerequisites
 
