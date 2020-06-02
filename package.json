@@ -4,11 +4,12 @@
   "description": "",
   "main": "app/server.js",
   "scripts": {
-    "start": "nodemon -L --delay 80ms --exec 'fuser -k 56745/tcp; node --inspect=0.0.0.0:56745 app/server.js'"
+    "start": "nodemon -L --delay 100ms --exec 'fuser -k 56745/tcp; node --trace-warnings --inspect=56745 app/server.js'"
   },
   "author": "Leonardo FS",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
     "consign": "^0.1.6",
     "cors": "^2.8.5",

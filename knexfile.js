@@ -1,9 +1,8 @@
-// Update with your config settings.
 
 module.exports = {
-  
     client: 'postgresql',
     connection: {
+      host: 'postgres',
       database: 'node_crud',
       user:     'postgres',
       password: 'postgres'
@@ -13,7 +12,7 @@ module.exports = {
       max: 10
     },
     migrations: {
-      tableName: 'knex_migrations'
+      tableName: 'knex_migrations',
+      directory: './app/Data/migrations'
     }
-  
 };

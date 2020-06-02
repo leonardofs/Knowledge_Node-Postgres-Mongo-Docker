@@ -1,4 +1,4 @@
-version: "3"
+version: "3.8"
 
 services: 
     app:
@@ -10,6 +10,8 @@ services:
             - .:/usr/app
         depends_on: 
             - postgres
+        networks: 
+            - host
 
     postgres:
         image: postgres
@@ -21,3 +23,8 @@ services:
             - ./pgdata:/var/lib/postgresql/data
         ports: 
             - '5432:5432'
+        networks: 
+            - host
+        
+networks:  
+    host:  
